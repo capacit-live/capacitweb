@@ -490,22 +490,20 @@ How section
 }
 
 /* ----------------
-Concept section
+About section
  -------------------*/
-
-.concept-section p {
-	padding-top: 5px;
+.about-block {
+ min-height: 400px;
+ background-color: #0a183d;
 }
-
-.concept-item {
+.about-header {
+	font-size: 20px;
+	text-size-adjust: 50%;
 	text-align: center;
-	padding-top: 35px;
+	align-self: center;
 }
 
-.concept-item img {
-	border-radius: 40px;
-	margin-bottom: 15px;
-}
+
 
 
 /* ----------------
@@ -513,8 +511,8 @@ Responsive
  -------------------*/
 
 .footer-section {
-	background: #0a183d;
-	padding: 100px 0 85px;
+	background: #ffffff;
+	padding: 40px 0 85px;
 }
 
 .footer-widget {
