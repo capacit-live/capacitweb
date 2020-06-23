@@ -534,15 +534,22 @@ About section
 }
 
 .pic-row {
+	line-height: 80%;
 	text-align: center;
+	padding-right: 80px;
 	margin: auto;
 	width:960px;
 	}
+
+.our-team {
+	padding-bottom: 20px;
+}	
 
 .facepic {
 	display: inline-block;
 	margin-left: 80px;
 	margin-right: 80px;
+	padding-bottom: 10px;
 	width: 100px;
 	height:auto;
 }
@@ -552,7 +559,7 @@ About section
 	overflow:hidden;
 	text-align: center;
 	margin: auto;
-	width: 150px;
+	width: 170px;
 	height: auto;
 }
 
