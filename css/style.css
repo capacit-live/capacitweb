@@ -84,7 +84,7 @@ Helper CSS
 }
 
 .section-title h2 {
-	font-size: 60px;
+	font-size: 40px;
 }
 
 .set-bg {
@@ -493,8 +493,9 @@ How section
 About section
  -------------------*/
 .about-block {
- min-height: 400px;
- background-color: #0a183d;
+	padding-top: 1%;
+ 	min-height: 400px;
+ 	background-color: #0a183d;
 }
 .about-header {
 	font-size: 20px;
@@ -502,6 +503,19 @@ About section
 	text-align: center;
 	align-self: center;
 }
+
+.misson-text {
+	width: 60%;
+	font-size: 10px;
+	padding-top: 20px;
+	color: white;
+	text-align: center;
+	margin-left: auto;
+  	margin-right: auto;
+	float: center;
+}
+
+
 
 
 
@@ -688,11 +702,13 @@ Blog page
 /* ----------------
 Map page
  -------------------*/
+.map-body {
+	background: #0a183d;
+}
 
 .map {
 	height: 100%;
 	width: 100%;
-	background: #ddd;
 }
 
 .map iframe {
@@ -1376,7 +1392,7 @@ Responsive
 	.section-title h2,
 	.hs-item h2,
 	.sub-text h2 {
-		font-size: 36px;
+		font-size: 26px;
 	}
 	.wave-player-info h2 {
 		font-size: 24px;
