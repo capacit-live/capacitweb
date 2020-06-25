@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'montdark';
     src: url('webfontkit/mont-heavy-webfont.woff2') format('woff2'),
@@ -6,9 +7,6 @@
     font-style: normal;
 
 }
-
-
-
 @font-face {
     font-family: 'montblack';
     src: url('webfontkit/mont-black-webfont.woff2') format('woff2'),
@@ -17,15 +15,12 @@
     font-style: normal;
 
 }
-
-
 @font-face {
     font-family: 'montbold';
     src: url('webfontkit/mont-bold-webfont.woff2') format('woff2'),
          url('webfontkit/mont-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 .capacit {
@@ -58,7 +53,7 @@ h1 {
 }
 
 h2 {
-	font-family: "Montserrat", sans-serif;
+	font-family: "montbold", sans-serif;
 	font-size: 36px;
 }
 
@@ -303,7 +298,7 @@ Header section
 	display: block;
 	font-size: 20px;
 	color: #16183f;
-	padding: 44px 10px;
+	padding: 35px 10px;
 	margin-left: 60px;
 }
 
@@ -437,28 +432,28 @@ Hero section
 }
 
 .owl-item.active .hs-item img {
-	-webkit-transition: all 0.5s ease 0.2s;
-	transition: all 0.5s ease 0.2s;
+	-webkit-transition: all 0.7s ease 0.2s;
+	transition: all 0.7s ease 0.2s;
 }
 
 .owl-item.active .hs-item h2 {
-	-webkit-transition: all 0.5s ease 0.4s;
-	transition: all 0.5s ease 0.4s;
+	-webkit-transition: all 0.7s ease 0.4s;
+	transition: all 0.7s ease 0.4s;
 }
 
 .owl-item.active .hs-item p {
-	-webkit-transition: all 0.5s ease 0.6s;
-	transition: all 0.5s ease 0.6s;
+	-webkit-transition: all 0.7s ease 0.6s;
+	transition: all 0.7s ease 0.6s;
 }
 
 .owl-item.active .hs-item .site-btn {
-	-webkit-transition: all 0.5s ease 0.8s;
-	transition: all 0.5s ease 0.8s;
+	-webkit-transition: all 0.7s ease 0.8s;
+	transition: all 0.7s ease 0.8s;
 }
 
 .owl-item.active .hs-item .site-btn.sb-c2 {
-	-webkit-transition: all 0.5s ease 1s;
-	transition: all 0.5s ease 1s;
+	-webkit-transition: all 0.7s ease 1s;
+	transition: all 0.7s ease 1s;
 }
 
 .hero-slider .owl-dots {
@@ -507,7 +502,7 @@ Intro section
 	height: 47px;
 	border-radius: 50%;
 	background: #e6e7b7;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 }
 
 .how-item .hi-icon img {
@@ -519,7 +514,7 @@ Intro section
 }
 
 .how-item h4 {
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 }
 
 .how-item p {
@@ -648,33 +643,33 @@ Other pages
 Map page
  -------------------*/
 .map-body {
-	background: #0a183d;
+	border-top: solid;
+	border-bottom: solid;
+	background: #ffffff;
+	min-height: 500px;
 }
 
-.map {
+#map {
+	min-height: 494px;
 	height: 100%;
 	width: 100%;
 }
 
-.map iframe {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 200;
-	top: 0;
-}
-.body-text {
-	padding-top: 20px;
-}
-
-.right-bar {
-	min-height: 700px;
-	padding: 50px 53px 14px 78px;
+.right-side {
+	padding-top: 0px;
 }
 
 .datatable {
-	color: 0a183d;
+	color: #0a183d;
+} 
+.tabs {
+	padding: 8px;
 }
+
+#selected {
+	background-color: grey;
+}
+
 
 
 
@@ -701,27 +696,6 @@ Map page
 	}
 	.sub-list {
 		padding: 70px 15px 50px 90px;
-	}
-	.category-section .section-title,
-	.playlist-section .section-title {
-		float: none;
-	}
-	.category-links,
-	.playlist-filter {
-		text-align: left;
-	}
-	.playlist-item {
-		padding: 0;
-	}
-	.player-box {
-		padding: 70px 80px 80px;
-	}
-	.similar-song {
-		margin-bottom: 70px;
-	}
-	.artist-details img {
-		float: none;
-		margin-bottom: 30px;
 	}
 	.contact-warp {
 		padding: 100px 15px 60px 40px;
@@ -803,49 +777,11 @@ Map page
 	.footer-widget {
 		margin-bottom: 40px;
 	}
-	.category-section .section-title,
-	.playlist-section .section-title {
-		float: none;
-	}
-	.category-links,
-	.playlist-filter {
-		text-align: left;
-	}
-	.playlist-item {
-		padding: 0;
-	}
-	.player-box {
-		display: block;
-		padding: 77px 90px 100px;
-	}
-	.wave-player-warp {
-		width: 100%;
-	}
-	.wave-player-warp .songs-links {
-		text-align: center;
-		padding-top: 0;
-		margin-bottom: 40px;
-	}
 	.tarck-thumb-warp {
 		width: 100%;
 	}
 	.tarck-thumb-warp .tarck-thumb {
 		margin: 0 auto;
-	}
-	.wave-player-info,
-	.wavePlayer_controls {
-		text-align: center;
-	}
-	.similar-song {
-		margin-bottom: 60px;
-	}
-	.playlist-section,
-	.category-section {
-		padding: 100px 0;
-	}
-	.playlist-section .container,
-	.category-section .container {
-		max-width: 100%;
 	}
 	.category-item {
 		margin: 0;
@@ -942,65 +878,11 @@ Map page
 	.footer-widget {
 		margin-bottom: 40px;
 	}
-	.category-section .section-title,
-	.playlist-section .section-title {
-		float: none;
-	}
-	.category-links,
-	.playlist-filter {
-		text-align: left;
-	}
-	.playlist-filter li,
-	.category-links a {
-		margin-right: 15px;
-	}
-	.playlist-item {
-		padding: 0;
-	}
-	.playlist-section {
-		padding: 100px 0;
-	}
-	.artist-details img {
-		float: none;
-		margin-bottom: 30px;
-	}
-	.player-box {
-		display: block;
-	}
-	.wave-player-warp {
-		width: 100%;
-	}
-	.wave-player-warp .songs-links {
-		text-align: center;
-		padding-top: 0;
-		margin-bottom: 40px;
-	}
 	.tarck-thumb-warp {
 		width: 100%;
 	}
 	.tarck-thumb-warp .tarck-thumb {
 		margin: 0 auto;
-	}
-	.wave-player-info,
-	.wavePlayer_controls {
-		text-align: center;
-	}
-	.player-box {
-		padding: 75px 40px 80px;
-	}
-	.similar-song {
-		margin-bottom: 60px;
-	}
-	.songs-details-section {
-		padding: 100px 0px 50px;
-	}
-	.similar-songs-section,
-	.playlist-section {
-		padding: 100px 0;
-	}
-	.similar-songs-section .container,
-	.playlist-section .container {
-		max-width: 100%;
 	}
 	.category-section {
 		padding: 105px 0;
@@ -1040,15 +922,10 @@ Map page
 	.sub-text h2 {
 		font-size: 26px;
 	}
-	.wave-player-info h2 {
-		font-size: 24px;
-	}
 	.header-section {
 		padding: 0;
 	}
-	.player-box {
-		padding: 40px;
-	}
+	
 	.contact-warp {
 		padding: 100px 15px;
 	}
@@ -1061,29 +938,9 @@ Map page
 		bottom: 10px;
 		left: 20px;
 	}
-	.single_player_container .jp-interface {
-		display: block;
-	}
-	.song-details-box .player_controls_box,
-	.player_controls_box {
-		width: 100%;
-	}
-	.song-details-box .player_bars,
-	.player_bars {
-		width: 100%;
-	}
-	.song-details-box .jp-duration {
-		bottom: -19px;
-	}
+	
 	.jp-duration {
 		bottom: -31px;
-	}
-	.song-details-box .song-item {
-		margin-bottom: 40px;
-	}
-	.player-section,
-	.player-box {
-		padding: 15px;
 	}
 	.social-links a {
 		margin-right: 20px;
