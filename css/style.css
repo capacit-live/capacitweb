@@ -1,4 +1,36 @@
+@font-face {
+    font-family: 'montdark';
+    src: url('webfontkit/mont-heavy-webfont.woff2') format('woff2'),
+         url('webfontkit/mont-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+
+
+@font-face {
+    font-family: 'montblack';
+    src: url('webfontkit/mont-black-webfont.woff2') format('woff2'),
+         url('webfontkit/mont-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'montbold';
+    src: url('webfontkit/mont-bold-webfont.woff2') format('woff2'),
+         url('webfontkit/mont-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.capacit {
+	font-family: "montdark";
+}
 
 html,
 body {
@@ -26,6 +58,7 @@ h1 {
 }
 
 h2 {
+	font-family: "Montserrat", sans-serif;
 	font-size: 36px;
 }
 
@@ -81,7 +114,7 @@ Helper CSS
  -----------------------*/
 
 .section-title {
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 }
 
 .section-title h2 {
@@ -221,7 +254,7 @@ Header section
 	height: auto;
 	display: inline-block;
 	padding: 0;
-	padding: 30px 2px;
+	padding: 15px 2px;
 }
 
 .header-right {
@@ -242,7 +275,7 @@ Header section
 .header-right .user-panel a {
 	font-size: 20px;
 	color: #ffffff;
-	margin: 0 10px;
+	margin: 0 10;
 }
 
 .header-right .user-panel .register {
@@ -505,7 +538,6 @@ About section
 }
 .about-header {
 	font-size: 20px;
-	text-size-adjust: 50%;
 	text-align: center;
 	align-self: center;
 }
@@ -538,7 +570,7 @@ About section
 }
 
 .pic-row {
-	line-height: 80%;
+	line-height: 90%;
 	text-align: center;
 	padding-right: 80px;
 	margin: auto;
@@ -977,7 +1009,7 @@ Map page
 		max-width: 100%;
 	}
 	.header-section {
-		padding: 0 15px;
+		padding: 0 10px;
 	}
 	.category-item {
 		margin: 0 0 30px;
