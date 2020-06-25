@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <title>Map Page</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="SolMusic HTML Template">
-	<meta name="keywords" content="music, html">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<!-- Favicon -->
-	<link href="img/faviconround.png" rel="shortcut icon"/>
+    <meta charset="UTF-8">
+    <meta name="description" content="Map/Data Distplay UI">
+    <meta name="keywords" content="capacit, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
- 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
-	<link rel="stylesheet" href="css/slicknav.min.css"/>
+    <!-- Favicon -->
+    <link href="img/faviconround.png" rel="shortcut icon" />
 
-	<!-- Main Stylesheets -->
-	<link rel="stylesheet" href="css/style.css"/>
+    <!-- Google font -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+
+    <!-- Main Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
 
 
-	<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
 </head>
-<body>
-	<!-- Page Preloder -->
-	<div id="preloder">
-		<div class="loader"></div>
-	</div>
 
-	<!-- Header section -->
-	<header class="header-section clearfix">
-		<a href="index.html" class="site-logo">
-			<img src="img/logo_withGT.png  " alt="">
-		</a>
-		<ul class="main-menu">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About Us</a></li>
-			<li><a href="map.html" style="color: #9fa07a;">Privacy</a></li>
-			<!-- <li><a href="map.html">Try Capacit</a>
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header section -->
+    <header class="header-section clearfix">
+        <a href="index.html" class="site-logo">
+            <img src="img/logo_withGT.png  " alt="">
+        </a>
+        <ul class="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="map.html" style="color: #9fa07a;">Privacy</a></li>
+            <!-- <li><a href="map.html">Try Capacit</a>
 				<ul class="sub-menu">
 					<li><a href="category.html">Category</a></li>
 					<li><a href="playlist.html">Playlist</a></li>
@@ -59,63 +64,81 @@
 					<li><a href="blog.html">Blog</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul> -->
-			</li>
-		</ul>
-	</header>
-	<!-- Header section end -->
+            </li>
+        </ul>
+    </header>
+    <!-- Header section end -->
 
-    
+
 
     <!-- Body section -->
     <div class="map-body">
-	<section class="contact-section">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-6 p-0">
-					<!-- Map -->
-					<div class="map">
-                        <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJbw3_E4oE9YgR9yiVCsbTgyY&key=AIzaSyAs6BrQhzVWRXXmoUOF7r8x6aefbPBBKqQ" style="border:0" allowfullscreen width="635"></iframe></div>
-				</div>
-				 <div class="col-lg-6 p-0">
-					<div class="right-bar">
-						<div class="section-title mb-0">
-							<h2 style="color: white;">Live Building Data </h2>
-                        </div>
-                        <div class="body-text">
+            <div class="row">
+                <div class="col-lg-4 p-0">
+                <!-- Maps Section begin-->
+                    <div id="map">
+                        <script src="map.js"></script>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs6BrQhzVWRXXmoUOF7r8x6aefbPBBKqQ&callback=initMap" async defer></script>
+
+                    </div>
+
+                <!-- Maps Section End -->
+                </div>
+                
+                <div class="col-lg-8 p-0">
+                <!-- Data Tabs Section Start-->
+                    <div class="right-side">
+                        <div class="tabs">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                                  <a class="nav-link active" id="dining-tab" data-toggle="tab" href="#home" role="tab" aria-controls="dining" aria-selected="true">Dining</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                                  <a class="nav-link" id="study-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="study" aria-selected="false">Study Spots</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                                  <a class="nav-link" id="makers-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="makers" aria-selected="false">Maker's Spaces</a>
                                 </li>
                               </ul>
                               <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="dining-tab">
+                                    Table for dining
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="study-tab">
+                                    Table for study
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="makers-tab">
+                                    Table for Maker's Spaces
+                                </div>
                               </div>
-                                
                         </div>
+
                     </div>
-					</div> 
-				</div> 
-			</div>
-		</div>
-    </section>
-</div>
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+                    <!-- Tabs Section End-->
+                </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <!-- Javascript Import stuff -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
-	<!-- Body section end -->
+<!-- Body section end -->
 
-	<!-- Footer section 
+<!-- Footer section 
 	<footer class="footer-section">
 		<div class="container">
 			<div class="row">
@@ -149,27 +172,29 @@
 					</div>
 				</div>
                 -->
-				<div class="col-xl-6 col-lg-5 order-lg-1">
-					<p style="font-size: 15px; color:0a183d;">copyright <img src="img/montdemo.png" alt="" height="20px" style="padding-bottom: 2px;"> 2020</p>
-				
-					<div class="social-links">
-						<a href=""><i class="fa fa-instagram"></i></a>
-						<a href=""><i class="fa fa-facebook"></i></a>
-						<a href=""><i class="fa fa-twitter"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- Footer section end -->
-	
-	<!--====== Javascripts & Jquery ======-->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.slicknav.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/mixitup.min.js"></script>
-	<script src="js/main.js"></script>
+<div class="col-xl-6 col-lg-5 order-lg-1">
+    <p style="font-size: 15px; color:0a183d;">copyright <img src="img/montdemo.png" alt="" height="20px"
+            style="padding-bottom: 2px;"> 2020</p>
 
-	</body>
+    <div class="social-links">
+        <a href=""><i class="fa fa-instagram"></i></a>
+        <a href=""><i class="fa fa-facebook"></i></a>
+        <a href=""><i class="fa fa-twitter"></i></a>
+    </div>
+</div>
+</div>
+</div>
+</footer>
+<!-- Footer section end -->
+
+<!--====== Javascripts & Jquery ======-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
 </html>

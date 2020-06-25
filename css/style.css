@@ -643,32 +643,25 @@ Other pages
 Map page
  -------------------*/
 .map-body {
-	background: #0a183d;
+	border-top: solid;
+	border-bottom: solid;
+	background: #ffffff;
+	min-height: 500px;
 }
 
-.map {
+#map {
+	min-height: 494px;
 	height: 100%;
 	width: 100%;
 }
 
-.map iframe {
-	position: absolute;
-	width: 70%;
-	height: 100%;
-	left: 200;
-	top: 0;
-}
-.body-text {
-	padding-top: 20px;
-}
 
-.right-bar {
-	min-height: 700px;
-	padding: 50px 53px 14px 78px;
+.right-side {
+	padding-top: 0px;
 }
 
 .datatable {
-	color: 0a183d;
+	color: #0a183d;
 }
 
 
