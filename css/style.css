@@ -578,7 +578,7 @@ About section
 
 .facepic {
 	display: inline-block;
-	margin-left: 80px;
+	margin-left: 0px;
 	margin-right: 80px;
 	padding-bottom: 10px;
 	width: 100px;
