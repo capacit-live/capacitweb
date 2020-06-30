@@ -432,28 +432,28 @@ Hero section
 }
 
 .owl-item.active .hs-item img {
-	-webkit-transition: all 1s ease 0.2s;
-	transition: all 1s ease 0.2s;
+	-webkit-transition: all 1.5s ease 0.2s;
+	transition: all 1.5s ease 0.2s;
 }
 
 .owl-item.active .hs-item h2 {
-	-webkit-transition: all 1s ease 0.4s;
-	transition: all 1s ease 0.4s;
+	-webkit-transition: all 1.5s ease 0.4s;
+	transition: all 1.5s ease 0.4s;
 }
 
 .owl-item.active .hs-item p {
-	-webkit-transition: all 1s ease 0.6s;
-	transition: all 1s ease 0.6s;
+	-webkit-transition: all 1.5s ease 0.6s;
+	transition: all 1.5s ease 0.6s;
 }
 
 .owl-item.active .hs-item .site-btn {
-	-webkit-transition: all 1s ease 0.8s;
-	transition: all 1s ease 0.8s;
+	-webkit-transition: all 1.5s ease 0.8s;
+	transition: all 1.5s ease 0.8s;
 }
 
 .owl-item.active .hs-item .site-btn.sb-c2 {
-	-webkit-transition: all 1s ease 1s;
-	transition: all 1s ease 1s;
+	-webkit-transition: all 1.5s ease 1s;
+	transition: all 1.5s ease 1s;
 }
 
 .hero-slider .owl-dots {
