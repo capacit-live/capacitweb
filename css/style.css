@@ -432,28 +432,28 @@ Hero section
 }
 
 .owl-item.active .hs-item img {
-	-webkit-transition: all 2s ease 0.2s;
-	transition: all 2s ease 0.2s;
+	-webkit-transition: all 0.7s ease 0.2s;
+	transition: all 0.7s ease 0.2s;
 }
 
 .owl-item.active .hs-item h2 {
-	-webkit-transition: all 2s ease 0.4s;
-	transition: all 2s ease 0.4s;
+	-webkit-transition: all 0.7s ease 0.4s;
+	transition: all 0.7s ease 0.4s;
 }
 
 .owl-item.active .hs-item p {
-	-webkit-transition: all 2s ease 0.6s;
-	transition: all 2s ease 0.6s;
+	-webkit-transition: all 0.7s ease 0.6s;
+	transition: all 0.7s ease 0.6s;
 }
 
 .owl-item.active .hs-item .site-btn {
-	-webkit-transition: all 2s ease 0.8s;
-	transition: all 2s ease 0.8s;
+	-webkit-transition: all 0.7s ease 0.8s;
+	transition: all 0.7s ease 0.8s;
 }
 
 .owl-item.active .hs-item .site-btn.sb-c2 {
-	-webkit-transition: all 2s ease 1s;
-	transition: all 2s ease 1s;
+	-webkit-transition: all 0.7s ease 1s;
+	transition: all 0.7s ease 1s;
 }
 
 .hero-slider .owl-dots {
@@ -530,6 +530,7 @@ About section
 	padding-top: 1%;
  	min-height: 400px;
  	background-color: #0a183d;
+ 	overflow-x:hidden;
 }
 .about-header {
 	font-size: 20px;
@@ -567,9 +568,9 @@ About section
 .pic-row {
 	line-height: 90%;
 	text-align: center;
-	padding-right: 80px;
+	padding-right: 70px;
 	margin: auto;
-	width:960px;
+	width:950px;
 	}
 
 .our-team {
