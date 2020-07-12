@@ -648,6 +648,9 @@ Map page
 	 background-color: #737b9e;
  }
 
+ .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+	--alpha: 1;
+  }
  
 .map-body {
 	border-top: solid;
