@@ -248,8 +248,7 @@ Header section
 	width: 20%;
 	height: auto;
 	display: inline-block;
-	padding: 0;
-	padding: 15px 2px;
+	padding: 15px 5px;
 }
 
 .header-right {
@@ -528,7 +527,8 @@ About section
  -------------------*/
 .about-block {
 	padding-top: 1%;
- 	min-height: 400px;
+	 min-height: 400px;
+	 width: 100%;
  	background-color: #0a183d;
  	overflow-x:hidden;
 }
@@ -586,6 +586,7 @@ About section
 	height:auto;
 }
 .pic-desc{
+	line-height: 5mm;
 	display: inline-block;
 	align-items: center;
 	overflow:hidden;
@@ -680,7 +681,7 @@ Map page
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.header-section {
 		padding-left: 15px;
-		padding-right: 20px;
+		padding-right: 10px;
 	}
 	.header-right {
 		margin-left: 20px;
@@ -718,7 +719,7 @@ Map page
 	.slicknav_menu {
 		display: block;
 		background: transparent;
-		margin-top: -60px;
+		margin-top: -40px;
 	}
 	.slicknav_nav {
 		background: #1c294a;
@@ -813,14 +814,17 @@ Map page
 	.hr-img {
 		display: none;
 	}
+	.header-section {
+		padding: 0 2px;
+	}
 	.slicknav_menu {
 		display: block;
 		background: transparent;
-		margin-top: -60px;
+		margin-top: -15px;
 	}
 	.slicknav_nav {
 		background: #1c294a;
-		margin-bottom: 35px;
+		margin-bottom: 0px;
 	}
 	.slicknav_nav ul {
 		margin: 0 0 0 0;
@@ -837,11 +841,18 @@ Map page
 	}
 	.slicknav_btn {
 		position: relative;
-		top: -24px;
+		top: -44px;
 		background: #1c294a;
 	}
 	.main-menu {
 		display: none;
+	}
+	.site-logo {
+		width: 40%;
+		height: auto;
+		display: inline-block;
+		padding-top:5%;
+		padding-left: 5%;
 	}
 	.header-right {
 		display: none;
@@ -870,9 +881,6 @@ Map page
 	.header-right-warp .header-right .user-panel .login {
 		padding-right: 10px;
 	}
-	.sub-list {
-		padding: 60px 15px 50px 30px;
-	}
 	.sub-text {
 		margin-bottom: 50px;
 	}
@@ -892,7 +900,10 @@ Map page
 		max-width: 100%;
 	}
 	.header-section {
-		padding: 0 10px;
+		padding: 0px;
+	}
+	.site-logo {
+		width:30%;
 	}
 	.category-item {
 		margin: 0 0 30px;
