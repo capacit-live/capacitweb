@@ -657,9 +657,8 @@ Map page
 }
 
 #map {
-	min-height: 494px;
-	height: 100%;
-	width: 100%;
+	min-height: 0px;
+	visibility: hidden;
 }
 
 .right-side {
@@ -681,12 +680,25 @@ Map page
 }
 
 
-
+@media only screen and (min-width: 992px) and (max-width: 5000px) {
+	#map {
+		visibility: visible;
+		min-height: 494px;
+		height: 100%;
+		width: 100%;
+	}
+}
 
 
 /* Medium screen : 992px. */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+	#map {
+		visibility: visible;
+		min-height: 494px;
+		height: 100%;
+		width: 100%;
+	}
 	.header-section {
 		padding-left: 15px;
 		padding-right: 10px;
@@ -723,10 +735,6 @@ Map page
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.dropdown {
 		width:10%;
-	}
-	#map {
-		visibility: hidden;
-		min-height: 0;
 	}
 	.hr-img {
 		display: none;
@@ -928,10 +936,6 @@ Map page
 	.category-item {
 		margin: 0 0 30px;
 	}
-	#map {
-		visibility: hidden;
-		min-height: 0px;
-	}
 	.contact-warp {
 		padding: 100px 40px;
 	}
@@ -952,10 +956,6 @@ Map page
 @media only screen and (max-width: 479px) {
 	.dropdown {
 		width:10%;
-	}
-	#map {
-		visibility: hidden;
-		min-height: 0px;
 	}
 	.section-title h2,
 	.hs-item h2,
