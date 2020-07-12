@@ -647,6 +647,12 @@ Map page
  #dropdownMenuButton {
 	 background-color: #737b9e;
  }
+ th {
+    background-color: #f7f7f7;
+} 
+  .nav-tabs > li > a {
+	color: #868dc2;
+  }
 
  .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
 	--alpha: 1;
