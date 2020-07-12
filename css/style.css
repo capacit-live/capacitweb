@@ -644,6 +644,11 @@ Other pages
 /* ----------------
 Map page
  -------------------*/
+ #dropdownMenuButton {
+	 background-color: #737b9e;
+ }
+
+ 
 .map-body {
 	border-top: solid;
 	border-bottom: solid;
@@ -670,6 +675,9 @@ Map page
 
 #selected {
 	background-color: grey;
+}
+.btn btn-secondary dropdown-toggle {
+	width:10%;
 }
 
 
@@ -713,6 +721,13 @@ Map page
 /* Tablet :768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.dropdown {
+		width:10%;
+	}
+	#map {
+		visibility: hidden;
+		min-height: 0;
+	}
 	.hr-img {
 		display: none;
 	}
@@ -797,9 +812,6 @@ Map page
 		bottom: 10px;
 		left: 20px;
 	}
-	.map {
-		height: 450px;
-	}
 	.song-details-box ul {
 		max-width: 100%;
 	}
@@ -811,9 +823,14 @@ Map page
 /* Large Mobile :480px. */
 
 @media only screen and (max-width: 767px) {
-	.map {
-		visibility: hidden;
-		display:none;
+
+	
+	#dropdownMenuButton {
+		content:'View Floors'; 
+	  }
+
+	.dropdown {
+		width:10%;
 	}
 	.hr-img {
 		display: none;
@@ -824,7 +841,6 @@ Map page
 	.slicknav_menu {
 		display: block;
 		background: transparent;
-		margin-top: -15px;
 	}
 	.slicknav_nav {
 		background: #1c294a;
@@ -912,8 +928,9 @@ Map page
 	.category-item {
 		margin: 0 0 30px;
 	}
-	.map {
-		height: 450px;
+	#map {
+		visibility: hidden;
+		min-height: 0px;
 	}
 	.contact-warp {
 		padding: 100px 40px;
@@ -933,9 +950,12 @@ Map page
 /* Small Mobile :320px. */
 
 @media only screen and (max-width: 479px) {
-	.map {
+	.dropdown {
+		width:10%;
+	}
+	#map {
 		visibility: hidden;
-		display: none;
+		min-height: 0px;
 	}
 	.section-title h2,
 	.hs-item h2,
