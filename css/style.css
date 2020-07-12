@@ -740,7 +740,7 @@ Map page
 	}
 	.slicknav_btn {
 		position: relative;
-		top: -24px;
+		top: -30px;
 		background: #1c294a;
 	}
 	.main-menu {
@@ -811,6 +811,10 @@ Map page
 /* Large Mobile :480px. */
 
 @media only screen and (max-width: 767px) {
+	.map {
+		visibility: hidden;
+		display:none;
+	}
 	.hr-img {
 		display: none;
 	}
@@ -929,6 +933,10 @@ Map page
 /* Small Mobile :320px. */
 
 @media only screen and (max-width: 479px) {
+	.map {
+		visibility: hidden;
+		display: none;
+	}
 	.section-title h2,
 	.hs-item h2,
 	.sub-text h2 {
