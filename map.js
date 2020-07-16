@@ -6,6 +6,30 @@ function initMap() {
   });
 }
 
+function moveToLocation(lat, lng){
+  const center = new google.maps.LatLng(lat, lng);
+  var myLatlng = { lat: lat, lng: lng };
+  //placeMarker(myLatlng);
+  // using global variable:
+  map.setZoom(18);
+  window.map.panTo(center);
+  
+}
+
+function placeMarker(location) {
+  var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+  var marker = new google.maps.Marker({
+      position: location, 
+      map: map
+  });
+}
+
+var colorMatch = {
+  '0-19'     : 'red',
+  '20-79'    : 'yellow',
+  '80-100'   : 'green'
+};
+
 /******** 
 $('#myTab a').on('click', function (e) {
     e.preventDefault()

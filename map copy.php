@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => "https://ngp39vpst8.execute-api.us-east-1.amazonaws.com/beta/-map",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "GET",
+  CURLOPT_HTTPHEADER => array(
+    "tokenHeader: allow"
+  ),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+?>
+
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -69,7 +94,7 @@
     </header>
     <!-- Header section end -->
 
-
+    
 
     <!-- Body section -->
     <div class="map-body">
@@ -116,17 +141,23 @@
                                         </thead>
                                         <tbody>
                                           <tr bgcolor="#fff2cc">
-                                            <td style="padding-bottom: 20px;"><a href="#" onclick="moveToLocation(33.770687,-84.391800)">North Ave Dining Hall</a></td>
-                                            <td>90%</td>
+                                            <td style="padding-bottom: 20px;">North Ave Dining Hall</td>
+                                            <td>
+                                                
+                                            <?php
+                                                 
+                                                 print 'Hello Worldss';
+                                             ?>
+                                            </td>
                                             <td></td>
                                           </tr>
                                           <tr bgcolor="#fff2cc" style="border-top: 1.5px solid #f5f5f0">
-                                            <td style="padding-bottom: 20px;"><a href="#" onclick="moveToLocation(33.772490, -84.391261)">Brittain Dining Hall </a></td>
+                                            <td style="padding-bottom: 20px;">Brittain Dining Hall </td>
                                             <td>80%</td>
                                             <td></td>
                                           </tr>
                                           <tr bgcolor="#d9ead3" style="border-top: 1.5px solid #f5f5f0">
-                                            <td><a href="#" onclick="moveToLocation(33.779314, -84.404823)">West Village</a></td>
+                                            <td>West Village</td>
                                             <td>26%</td>
                                             <td>
                                                 <div class="container">
@@ -160,7 +191,7 @@
                                         </thead>
                                         <tbody>
                                           <tr bgcolor="#fff2cc" style="border-top: 1.5px solid #f5f5f0">
-                                            <td><a href="#" onclick="moveToLocation(33.774094, -84.395026)">Crosland Tower</a></td>
+                                            <td>Crosland Tower</td>
                                             <td>80%</td>
                                             <td>
                                                 <div class="container">
@@ -179,7 +210,7 @@
                                             </td>
                                           </tr>
                                           <tr bgcolor="#d9ead3" style="border-top: 1.5px solid #f5f5f0">
-                                            <td><a href="#" onclick="moveToLocation(33.774938, -84.396417)">Clough Commons</a></td>
+                                            <td>Clough Commons</td>
                                             <td>40%</td>
                                             <td>
                                                 <div class="container">
@@ -198,7 +229,7 @@
                                             </td>
                                           </tr>
                                           <tr bgcolor="#d9ead3" style="border-top: 1.5px solid #f5f5f0">
-                                            <td style="padding-bottom: 20px;"><a href="#" onclick="moveToLocation(33.778681, -84.399583)">Kendeda Building</a></td>
+                                            <td style="padding-bottom: 20px;">Kendeda</td>
                                             <td>60%</td>
                                             <td></td>
                                           </tr>
@@ -216,17 +247,17 @@
                                         </thead>
                                         <tbody>
                                           <tr bgcolor="#d9ead3">
-                                            <td style="padding-bottom: 20px;"><a href="#" onclick="moveToLocation(33.776005, -84.397112)">The Hive</a></td>
+                                            <td style="padding-bottom: 20px;">The Hive</td>
                                             <td>10%</td>
                                             <td></td>
                                           </tr>
                                           <tr bgcolor="#d9ead3" style="border-top: 1.5px solid #f5f5f0">
-                                            <td style="padding-bottom: 20px;"><a href="#" onclick="moveToLocation(33.777283, -84.400688)">Invention Studio</a></td>
+                                            <td style="padding-bottom: 20px;">Invention Studio</td>
                                             <td>10%</td>
                                             <td></td>
                                           </tr>
                                           <tr bgcolor="#d9ead3" style="border-top: 1.5px solid #f5f5f0">
-                                            <td><a href="#" onclick="moveToLocation(33.776281, -84.401547)">The MILL</a></td>
+                                            <td>The MILL</td>
                                             <td>10%</td>
                                             <td>
                                                 <div class="container">
@@ -246,7 +277,7 @@
                                           </tr>
                                         </tbody>
                                       </table>
-                                </div> 
+                                </div>
                                 <div class="tab-pane fade" id="rec" role="tabpanel" aria-labelledby="rec-tab">
                                     <table class="table table-hover">
                                         <thead>
@@ -258,7 +289,7 @@
                                         </thead>
                                         <tbody>
                                           <tr bgcolor="#d9ead3">
-                                            <td><a href="#" onclick="moveToLocation(33.775473, -84.403015)">Campus Recreation Center</a></td>
+                                            <td>CRC</td>
                                             <td>10%</td>
                                             <td>
                                                 <div class="container">
@@ -277,7 +308,7 @@
                                             </td>
                                           </tr>
                                           <tr bgcolor="#d9ead3" style="border-top: 1.5px solid #f5f5f0">
-                                            <td><a href="#" onclick="moveToLocation(33.770064, -84.391041)">North Ave Gym</a></td>
+                                            <td>North Ave Gym</td>
                                             <td>10%</td>
                                             <td>
                                                 <div class="container">
@@ -296,7 +327,7 @@
                                             </td>
                                           </tr>
                                           <tr bgcolor="#d9ead3" style="border-top: 1.5px solid #f5f5f0">
-                                            <td style="padding-bottom: 20px;"><a href="#" onclick="moveToLocation(33.773754, -84.391290)">East Connector Gym</a></td>
+                                            <td style="padding-bottom: 20px;">Connector Gym</td>
                                             <td>10%</td>
                                             <td></td>
                                           </tr>

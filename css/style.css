@@ -651,7 +651,7 @@ Map page
     background-color: #f7f7f7;
 } 
   .nav-tabs > li > a {
-	color: #868dc2;
+	color: #5d659e;
   }
 
  .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
@@ -687,6 +687,19 @@ Map page
 .btn btn-secondary dropdown-toggle {
 	width:10%;
 }
+
+a {
+	color: rgb(30, 45, 133);
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: rgb(105, 101, 128);
+	background-color: transparent;
+  }
+ 
+  
 
 
 @media only screen and (min-width: 992px) and (max-width: 5000px) {
