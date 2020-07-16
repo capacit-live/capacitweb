@@ -651,7 +651,7 @@ Map page
     background-color: #f7f7f7;
 } 
   .nav-tabs > li > a {
-	color: #5d659e;
+	color: #5d659e !important; 
   }
 
  .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
@@ -688,17 +688,17 @@ Map page
 	width:10%;
 }
 
-a {
-	color: rgb(30, 45, 133);
-	background-color: transparent;
-	text-decoration: none;
-  }
-  
-  a:hover {
-	color: rgb(105, 101, 128);
-	background-color: transparent;
-  }
- 
+td a:hover {
+    color: rgb(113, 115, 122) !important;
+}
+
+td a {
+    color: rgb(30, 45, 133) !important;
+}
+
+
+
+
   
 
 
