@@ -30,6 +30,59 @@ var colorMatch = {
   '80-100'   : 'green'
 };
 
+
+
+
+/** 
+$( document ).ready(function() {
+  var headerParams = {'tokenHeader':'allow'};
+  var api_url = 'https://ngp39vpst8.execute-api.us-east-1.amazonaws.com/beta/-map'
+  var tokenHeader = 'allow' 
+
+  $( ".content a" ).each(function( index, element ) {
+    $.ajax({
+        url: api_url + "?key=" + key + " &q=" + $( this ).text(),
+        headers:headerParams,
+        contentType: "application/json",
+        dataType: 'json',
+        success: function(result){
+            console.log(result);
+        }
+    })
+  });
+});
+*/
+//Postman code for GET
+
+$.ajax({
+  url: "https://ngp39vpst8.execute-api.us-east-1.amazonaws.com/beta",
+  contentType: "application/json",
+  type: 'GET',
+  headers: {
+    'tokenHeader':'allow'
+  },
+  dataType: 'json',
+  success: function(result){
+    console.log(result);
+  }
+});
+
+/** 
+var settings = {
+  "url": "https://ngp39vpst8.execute-api.us-east-1.amazonaws.com/beta/-map",
+  "method": "GET",
+  "timeout": 0,
+  "headers": {
+    "tokenHeader": "allow"
+  },
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(result);
+});
+
+*/
+
 /******** 
 $('#myTab a').on('click', function (e) {
     e.preventDefault()

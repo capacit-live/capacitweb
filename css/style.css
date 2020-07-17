@@ -644,6 +644,9 @@ Other pages
 /* ----------------
 Map page
  -------------------*/
+ .container-fluid {
+	margin:0%;
+ }
  #dropdownMenuButton {
 	 background-color: #737b9e;
  }
@@ -659,10 +662,11 @@ Map page
   }
  
 .map-body {
+	position: relative;
 	border-top: solid;
 	border-bottom: solid;
 	background: #ffffff;
-	min-height: 450px;
+	min-height: 400px;
 }
 
 #map {
@@ -674,9 +678,6 @@ Map page
 	padding-top: 0px;
 }
 
-.datatable {
-	color: #0a183d;
-} 
 .tabs {
 	padding: 8px;
 }
@@ -758,13 +759,17 @@ td a {
 	.dropdown {
 		width:10%;
 	}
+	.header-section {
+		padding: 0 0 0 0;
+	}
 	.hr-img {
 		display: none;
 	}
 	.slicknav_menu {
 		display: block;
 		background: transparent;
-		margin-top: -40px;
+		margin-top: -4%;
+		margin-bottom: -2%;
 	}
 	.slicknav_nav {
 		background: #1c294a;
@@ -782,6 +787,10 @@ td a {
 		border-radius: 0;
 		color: #fc0254;
 		background: transparent;
+	}
+	.site-logo {
+		display: inline-block;
+		padding: 10 10;
 	}
 	.slicknav_btn {
 		position: relative;
@@ -853,7 +862,6 @@ td a {
 /* Large Mobile :480px. */
 
 @media only screen and (max-width: 767px) {
-
 	
 	#dropdownMenuButton {
 		content:'View Floors'; 
@@ -865,20 +873,29 @@ td a {
 	.hr-img {
 		display: none;
 	}
-	.header-section {
-		padding: 0 2px;
-	}
 	.slicknav_menu {
+		padding-top: 0px;
 		display: block;
 		background: transparent;
+		margin-top: -40px;
+	}
+	.slicknav_btn {
+		position: relative;
+		top: -4%;
+		background: #1c294a;
 	}
 	.slicknav_nav {
 		background: #1c294a;
 		margin-bottom: 0px;
 	}
-	.slicknav_nav ul {
+	.slicknav_nav li {
 		margin: 0 0 0 0;
 	}
+
+	.slicknav_menu, .slicknav_menu * {
+		box-sizing: border-box;
+	}
+
 	.slicknav_nav .slicknav_row,
 	.slicknav_nav a {
 		padding: 12px 25px;
@@ -889,11 +906,7 @@ td a {
 		color: #fc0254;
 		background: transparent;
 	}
-	.slicknav_btn {
-		position: relative;
-		top: -44px;
-		background: #1c294a;
-	}
+	
 	.main-menu {
 		display: none;
 	}
@@ -901,8 +914,9 @@ td a {
 		width: 40%;
 		height: auto;
 		display: inline-block;
-		padding-top:5%;
+		padding-top:2%;
 		padding-left: 5%;
+		padding-bottom: 3% ;
 	}
 	.header-right {
 		display: none;
@@ -976,6 +990,28 @@ td a {
 /* Small Mobile :320px. */
 
 @media only screen and (max-width: 479px) {
+
+	.site-logo {
+		width: 40%;
+		height: auto;
+		display: inline-block;
+		padding-top:2%;
+		padding-left: 5%;
+		padding-bottom: 3% ;
+	}
+	.slicknav_menu {
+		padding-top: 0px;
+		display: block;
+		background: transparent;
+		margin-top: -10%;
+	}
+	.slicknav_btn {
+		position: relative;
+		left: -2%;
+		top: -4%;
+		background: #1c294a;
+	}
+
 	.dropdown {
 		width:10%;
 	}
