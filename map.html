@@ -110,7 +110,13 @@ $.ajax(settings).done(function (response) {
 </script>
 
 
-
+<script>
+  $(document).ready(function(){
+          $.get("something", function(data){
+              $("#result").html(data);
+          });
+  });
+  </script>
 
     <!-- Body section -->
     <div class="map-body">
