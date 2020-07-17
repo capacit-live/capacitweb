@@ -1,3 +1,7 @@
+var script = document.createElement('script');
+script.src = '//code.jquery.com/jquery-3.5.1.min.js';
+document.getElementsByTagName('head')[0].appendChild(script);
+
 
 var map;
 function initMap() {
