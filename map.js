@@ -75,8 +75,12 @@ var settings = {
   "method": "GET",
   "timeout": 0,
   "headers": {
-    "tokenHeader": "allow"
+    "tokenHeader": "allow",
+    "Access-Control-Allow-Origin" : "*", 
+    "Access-Control-Allow-Credentials" : true,
+    'Content-Type': 'application/json'
   },
+  "body": JSON.stringify({ "message": "Hello World!" })
 };
 
 $.ajax(settings).done(function (response) {
