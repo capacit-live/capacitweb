@@ -1,3 +1,4 @@
+
 var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
@@ -69,21 +70,17 @@ $.ajax({
 });
 **/
 
-$.ajax({
-  url: "https://ngp39vpst8.execute-api.us-east-1.amazonaws.com/beta",
-  type: 'GET',
-  crossDomain: true,
-  data: JSON.stringify({
-      url: $('#url').val()
-  }),
-  headers: {
-      "tokenHeader": 'allow'
+var settings = {
+  "url": "https://ngp39vpst8.execute-api.us-east-1.amazonaws.com/beta/-map",
+  "method": "GET",
+  "timeout": 0,
+  "headers": {
+    "tokenHeader": "allow"
   },
-  dataType: 'json',
-  contentType: "application/json",
-  success: function (data) {
-      console.info(data);
-  }
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
 });
 
 /** 
