@@ -51,7 +51,7 @@ $( document ).ready(function() {
     })
   });
 });
-*/
+
 //Postman code for GET
 
 $.ajax({
@@ -65,6 +65,24 @@ $.ajax({
   success: function(result){
     console.log(result);
     console.log('peepeepoopoo');
+  }
+});
+**/
+
+$.ajax({
+  url: "https://ngp39vpst8.execute-api.us-east-1.amazonaws.com/beta",
+  type: 'GET',
+  crossDomain: true,
+  data: JSON.stringify({
+      url: $('#url').val()
+  }),
+  headers: {
+      "tokenHeader": 'allow'
+  },
+  dataType: 'json',
+  contentType: "application/json",
+  success: function (data) {
+      console.info(data);
   }
 });
 
