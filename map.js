@@ -34,7 +34,7 @@ var colorMatch = {
   '20-79'    : 'yellow',
   '80-100'   : 'green'
 };
-/** 
+
 <script>
     var settings = {
       "url": "https://ngp39vpst8.execute-api.us-east-1.amazonaws.com/beta/-map",
@@ -70,7 +70,7 @@ function makeRequest() {
   };
         
 }
-**/
+
 
 
 
