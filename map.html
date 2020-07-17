@@ -73,7 +73,22 @@
 
 <!---API Request Testing -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+      var settings = {
+  "url": "https://ngp39vpst8.execute-api.us-east-1.amazonaws.com/beta/-map",
+  "method": "GET",
+  "timeout": 0,
+  "headers": {
+    "tokenHeader": "allow"
+  },
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+    </script>
 
 
 
