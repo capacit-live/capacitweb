@@ -35,6 +35,7 @@ var colorMatch = {
   '80-100'   : 'green'
 };
 
+/** 
 <script>
     var settings = {
       "url": "https://ngp39vpst8.execute-api.us-east-1.amazonaws.com/beta/-map",
@@ -52,7 +53,7 @@ var colorMatch = {
     $.ajax(settings).done(function (response) {
       console.log(response);
     });
-</script>
+</script> */
 
 
 function makeRequest() {

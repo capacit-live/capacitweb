@@ -104,7 +104,7 @@ $.ajax(settings).done(function (response) {
     
     $.ajax(settings).done(function (response) {
       var data = JSON.stringify(response);
-      $("northave").append(data);
+      $("#show-data").append(data)
       console.log(response);
 
     });
