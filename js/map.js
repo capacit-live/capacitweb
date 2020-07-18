@@ -1,5 +1,4 @@
 var script = document.createElement('script');
-script.src = '//code.jquery.com/jquery-3.5.1.min.js';
 document.getElementsByTagName('head')[0].appendChild(script);
 
 
@@ -55,21 +54,68 @@ var colorMatch = {
     });
 </script> */
 
+var buildings = [ {building:'northave'},
+                  {building:'brittain'}, 
+                  {building:'westvillage'},
+                  {building:'crosland'},
+                  {building:'culc'},
+                  {building:'kendeda'},
+                  {building:'hive'},
+                  {building:'invention'},
+                  {building:'mill'} ];
 
-function makeRequest() {
+//$( "#northave" ).html( "Test" );
+getOccupancy(buildID);
+
+function refresh(buildings) {
+  for (var i in buildings)
+    {
+      var buildID = jQuery.param(buildings[i]);
+      getOccupancy(buildID);
+      //console.log(occupancy);
+      //$('#'+buildings[i].building).html(occupancy);
+    };
+};
+/** 
+function getOccupancy(buildID ) {
   var settings = {
-    "url": "https://ngp39vpst8.execute-api.us-east-1.amazonaws.com/beta/-map",
+    "async":"false",
+    "url": "https://ngp39vpst8.execute-api.us-east-1.amazonaws.com/beta/-map?time=1200&" + buildID,
     "method": "GET",
     "timeout": 0,
     "headers": {
       "tokenHeader": "allow",
-  //    "Access-Control-Allow-Origin" : "*", 
- //     "Access-Control-Allow-Credentials" : true,
-      'Content-Type': 'application/json'
+      "Content-Type": "application/json"
     },
     "body": JSON.stringify({ "message": "Hello World!" })
   };
-        
+  
+  $.ajax(settings).done(function (response) {
+    //var data = JSON.stringify(response);
+    var data = parseInt(response);
+    console.log(data);
+    return data;
+  });
+}*/
+function getOccupancy(buildID ) {
+  //  "async":"false"
+  $.ajax( {
+    type: "GET",
+    async:false,
+    url: "https://ngp39vpst8.execute-api.us-east-1.amazonaws.com/beta/-map?time=1200&" + buildID,
+    headers: {
+      "tokenHeader": "allow",
+      "Content-Type": "application/json"
+    },
+    timeout: 0,
+    success: function(data) {
+      $('#'+buildings[i].building).html(occupancy);
+      console.log(data);
+    },
+    error: function() {
+      alert('Error occured');
+    }
+  });
 }
 
 
