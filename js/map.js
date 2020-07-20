@@ -59,6 +59,12 @@ var brittain = buildings[1].building;
 var occ1 = getOccupancy(buildID1, brittain);
 $('#'+brittain).html(occ1);
 
+function startDemo() {
+  
+}
+
+
+
 /************** Would display the number for west village 
 var buildID2 = jQuery.param(buildings[2]);
 var westvillage = buildings[2].building;
