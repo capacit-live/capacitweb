@@ -58,7 +58,7 @@ getData(1200);
 function startDemo() {
   var timeV = 1200;
   setInterval(function(){
-    if (timeV > 1230) {
+    if (timeV > 1255) {
       clearInterval() ;
     } else {
       getData(timeV);
