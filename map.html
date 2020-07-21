@@ -152,19 +152,19 @@ $.ajax(settings).done(function (response) {
                                           </tr>
                                         </thead>
                                         <tbody>
-                                          <tr bgcolor="#fff2cc">
+                                          <tr id="northave_row" >
                                             <td style="padding-bottom: 20px;"><a href="#" onclick="moveToLocation(33.770687,-84.391800)">North Ave Dining Hall</a></td>
-                                            <td><div id="northave"></div>72%</td>
+                                            <td><span id="northave"></span>%</td>
                                             <td></td>
                                           </tr>
-                                          <tr bgcolor="#fff2cc" style="border-top: 1.5px solid #f5f5f0">
+                                          <tr id="brittain_row" style="border-top: 1.5px solid #f5f5f0">
                                             <td style="padding-bottom: 20px;"><a href="#" onclick="moveToLocation(33.772490, -84.391261)">Brittain Dining Hall </a></td>
                                             <td><span id="brittain"></span>%</td> <!-- This number is currently the only # requested from the DB/API  -->
                                             <td></td>
                                           </tr>
-                                          <tr bgcolor="#d9ead3" style="border-top: 1.5px solid #f5f5f0">
+                                          <tr id="westvillage_row" style="border-top: 1.5px solid #f5f5f0">
                                             <td><a href="#" onclick="moveToLocation(33.779314, -84.404823)">West Village</a></td>
-                                            <td><div id="westvillage"></div>30%</td>
+                                            <td><span id="westvillage"></span>%</td>
                                             <td>
                                                 <div class="container">
                                                     <div class="dropdown">
@@ -196,9 +196,9 @@ $.ajax(settings).done(function (response) {
                                           </tr>
                                         </thead>
                                         <tbody>
-                                          <tr bgcolor="#fff2cc" style="border-top: 1.5px solid #f5f5f0">
+                                          <tr id="crosland_row" style="border-top: 1.5px solid #f5f5f0">
                                             <td><a href="#" onclick="moveToLocation(33.774094, -84.395026)">Crosland Tower</a></td>
-                                            <td><div id="crosland"></div>78%</td>
+                                            <td><span id="crosland"></span>%</td>
                                             <td>
                                                 <div class="container">
                                                     <div class="dropdown">
@@ -215,9 +215,9 @@ $.ajax(settings).done(function (response) {
 
                                             </td>
                                           </tr>
-                                          <tr bgcolor="#d9ead3" style="border-top: 1.5px solid #f5f5f0">
+                                          <tr id="culc_row" style="border-top: 1.5px solid #f5f5f0">
                                             <td><a href="#" onclick="moveToLocation(33.774938, -84.396417)">Clough Commons</a></td>
-                                            <td><div id="culc"></div>45%</td>
+                                            <td><span id="culc"></span>%</td>
                                             <td>
                                                 <div class="container">
                                                     <div class="dropdown">
@@ -234,9 +234,9 @@ $.ajax(settings).done(function (response) {
 
                                             </td>
                                           </tr>
-                                          <tr bgcolor="#d9ead3" style="border-top: 1.5px solid #f5f5f0">
+                                          <tr id="kendeda_row" style="border-top: 1.5px solid #f5f5f0">
                                             <td style="padding-bottom: 20px;"><a href="#" onclick="moveToLocation(33.778681, -84.399583)">Kendeda Building</a></td>
-                                            <td><div id="kendeda"></div>15%</td>
+                                            <td><span id="kendeda"></span>%</td>
                                             <td></td>
                                           </tr>
                                         </tbody>
@@ -252,19 +252,19 @@ $.ajax(settings).done(function (response) {
                                           </tr>
                                         </thead>
                                         <tbody>
-                                          <tr bgcolor="#d9ead3">
+                                          <tr id="hive_row" bgcolor="#d9ead3">
                                             <td style="padding-bottom: 20px;"><a href="#" onclick="moveToLocation(33.776005, -84.397112)">The Hive</a></td>
-                                            <td><div id="hive"></div>10%</td>
+                                            <td><span id="hive"></span>%</td>
                                             <td></td>
                                           </tr>
-                                          <tr bgcolor="#d9ead3" style="border-top: 1.5px solid #f5f5f0">
+                                          <tr id="invention_row" bgcolor="#d9ead3" style="border-top: 1.5px solid #f5f5f0">
                                             <td style="padding-bottom: 20px;"><a href="#" onclick="moveToLocation(33.777283, -84.400688)">Invention Studio</a></td>
-                                            <td><div id="invention"></div>26%</td>
+                                            <td><span id="invention"></span>%</td>
                                             <td></td>
                                           </tr>
-                                          <tr bgcolor="#d9ead3" style="border-top: 1.5px solid #f5f5f0">
+                                          <tr id="mill_row" bgcolor="#d9ead3" style="border-top: 1.5px solid #f5f5f0">
                                             <td><a href="#" onclick="moveToLocation(33.776281, -84.401547)">The MILL</a></td>
-                                            <td><div id="mill"></div>40%</td>
+                                            <td><span id="mill"></span>%</td>
                                             <td>
                                                 <div class="container">
                                                     <div class="dropdown">
@@ -345,10 +345,11 @@ $.ajax(settings).done(function (response) {
 
                     </div>
 
-
                     <!-- Tabs Section End-->
-                    <p style="font-size: 10px;"> *Disclaimer: This is example data.</p>
-                   <!-- <button onclick="startDemo()">Button</button>-->
+                    
+                    <span style="font-size: 10px;"> *Disclaimer: This is example data.</span>
+                    <button class="demo_button" onclick="startDemo()">Start Demo</button>
+                  <!--   <span id="time_display">Time: 12:00</span>-->
                 </div>
         </div>
 

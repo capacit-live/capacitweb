@@ -43,8 +43,7 @@ var buildings = [ {building:'northave'},
                   {building:'hive'},
                   {building:'invention'},
                   {building:'mill'} ];
-
-//$( "#northave" ).html( "Test" );
+  
 
 /* ******    Would display the number for north ave
 var buildID = jQuery.param(buildings[0]);
@@ -53,39 +52,32 @@ var occ = getOccupancy(buildID, northave);
 $('#'+northave).html(occ);
 */
 
-// **** Displays number for brittain on map page
-var buildID1 = jQuery.param(buildings[1]);
-var brittain = buildings[1].building;
-var occ1 = getOccupancy(buildID1, brittain);
-$('#'+brittain).html(occ1);
+getData(1200);
+
 
 function startDemo() {
-  
+  var timeV = 1200;
+  setInterval(function(){
+    if (timeV > 1230) {
+      clearInterval() ;
+    } else {
+      getData(timeV);
+      timeV+=5;
+    }
+  }, 3000)
 }
+getData(1200);
 
 
-
-/************** Would display the number for west village 
-var buildID2 = jQuery.param(buildings[2]);
-var westvillage = buildings[2].building;
-var occ2 = getOccupancy(buildID2, westvillage);
-$('#'+westvillage).html(occ2);
-*/
-
-// Attempt at writing a loop to display numbers for all buildings, but run into issues w/ asynchronicity 
-/*
-function refresh (buildings) {
-  for (var i in buildings)
-    {
-      var buildID = jQuery.param(buildings[i]);
-      var buildSpot = buildings[i].building;
-      var occ = getOccupancy(buildID, buildSpot);
-
-      console.log(occ);
-      $('#'+buildspot).html(occ);
-    };
-};
-*/
+function getData (curTime){
+  for(var i in buildings) {
+    console.log({time:curTime});
+    var callTime = jQuery.param({time:curTime});
+    var buildID = jQuery.param(buildings[i]);
+    var name = buildings[i].building;
+    getOccupancy(buildID, name, callTime);
+  }
+}
 
 // Old code from Posrman request -- probably no longer needed just reference 
 /** 
@@ -110,20 +102,21 @@ function getOccupancy(buildID ) {
   });
 }*/
 
+
 /**
- * Function to make the GET request for occupancy value for given building
+ * Function to make the GET request for occupancy value for given building 
  * Time is set at default 1200
  * This method works for individual calls but is crazy slow 
  * @param {*} buildID The ID of the building passed as an object in form {building:'name'}
- * @param {*} buildingSpot The location in html map page to insert the number
+ * @param {*} buildingSpot The location in html map page to insert the number basically buildingID.building
  */
-function getOccupancy(buildID,buildingSpot) {
+function getOccupancy(buildID,buildingSpot, time) {
   var rtn = "";
   //  "async":"false"
   $.ajax( {
     type: "GET",
-    async:false,
-    url: "https://ngp39vpst8.execute-api.us-east-1.amazonaws.com/beta/-map?time=1200&" + buildID,
+   // async:false,
+    url: "https://ngp39vpst8.execute-api.us-east-1.amazonaws.com/beta/-map?" + time +"&" + buildID,
     dataType: 'json',
     headers: {
       "tokenHeader": "allow",
@@ -134,14 +127,26 @@ function getOccupancy(buildID,buildingSpot) {
      // $('#'+buildingSpot).html(JSON.stringify(data));
       console.log(data);
       rtn = data;
+      $('#'+buildingSpot).html(rtn);
+      setColor(buildingSpot, parseInt(rtn));
     },
     error: function() {
       alert('Error occured');
     }
   });
-  return rtn;
 };;
 ;
+
+function setColor(location, occVal) {
+  console.log(location);
+  if(occVal < 60){
+    document.getElementById(location+"_row").style.backgroundColor="#d9ead3";
+  } else if(occVal >= 60 && occVal <= 90){
+    document.getElementById(location+"_row").style.backgroundColor="#fff2cc";
+  } else if(occVal > 90){
+    document.getElementById(location+"_row").style.backgroundColor="#ff9999";
+  }
+}
 
 
 
@@ -157,3 +162,5 @@ $('#myTab li:first-child a').tab('show') // Select first tab
 $('#myTab li:last-child a').tab('show') // Select last tab
 $('#myTab li:nth-child(3) a').tab('show') // Select third tab
 */
+//button code
+

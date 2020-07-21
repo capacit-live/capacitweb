@@ -697,6 +697,30 @@ td a {
     color: rgb(30, 45, 133) !important;
 }
 
+.demo_button {
+	margin-left: 17%;
+	box-shadow:inset 0px 1px 0px 0px #757a9c;
+	background:linear-gradient(to bottom, #757a9c 5%, #868cb3 100%);
+	background-color:#757a9c;
+	border-radius:6px;
+	border:1px solid #757a9c;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	padding:5px 20px;
+	text-decoration:none;
+}
+.demo_button:hover {
+	background:linear-gradient(to bottom, #868cb3 5%, #757a9c 100%);
+	background-color:#868cb3;
+}
+.demo_button:active {
+	position:relative;
+	top:1px;
+}
+
+
 
 
 
