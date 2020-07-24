@@ -1,10 +1,10 @@
 var script = document.createElement('script');
 document.getElementsByTagName('head')[0].appendChild(script);
 
-function initMap() {}
+
 var map;
-initMap = function() {
-  map = new google.maps.Map(document.getElementById("map"), {
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 33.7749, lng: -84.3964},
     zoom: 16
   });
